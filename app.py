@@ -18,7 +18,7 @@ except Exception as e:
 
 @app.route('/')
 def home():
-    return "Property Price Prediction API is running!"
+    return render_template('property_price_predictor.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
